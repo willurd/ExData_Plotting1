@@ -1,4 +1,4 @@
-source("data/data.R")
+source("makeplot.R")
 
 # NOTE: The code for reading the data and generating the PNG is in data/data.R (sourced above).
 
