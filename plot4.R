@@ -1,5 +1,7 @@
 source("data/data.R")
 
+# NOTE: The code for reading the data and generating the PNG is in data/data.R (sourced above).
+
 plot1 <- function() {
   plot(d$DateTime, d$Global_active_power,
     type = "l",
@@ -43,6 +45,7 @@ plot4 <- function() {
 }
 
 makeplot("plot4", function(d) {
+  # Create a a 2x2 matrix of plots.
   par(mfrow = c(2, 2))
   plot1()
   plot2()

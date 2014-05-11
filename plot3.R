@@ -1,5 +1,7 @@
 source("data/data.R")
 
+# NOTE: The code for reading the data and generating the PNG is in data/data.R (sourced above).
+
 makeplot("plot3", function(d) {
   plot(d$DateTime, d$Sub_metering_1,
        type = "l",
