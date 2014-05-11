@@ -8,8 +8,8 @@ size <- 504
 bg = "transparent"
 
 # Actual variables.
-# size <- 480
-# bg <- "white"
+size <- 480
+bg <- "white"
 
 log <- function(...) {
   cat(sprintf(...), "\n")
