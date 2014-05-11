@@ -12,7 +12,7 @@ plot2 <- function() {
   plot(d$DateTime, d$Voltage,
     type = "l",
     ylab = "Voltage",
-    xlab = ""
+    xlab = "datetime"
   )
 }
 
@@ -37,18 +37,15 @@ plot3 <- function() {
 plot4 <- function() {
   plot(d$DateTime, d$Global_reactive_power,
     type = "l",
-    ylim = c(0.0, 0.5),
     ylab = "Global_reactive_power",
-    xlab = ""
+    xlab = "datetime"
   )
-  
-  axis(side = 1, at = seq(from = 0.0, to = 0.5, by = 0.1), labels = TRUE)
 }
 
-# makeplot("plot3", function(d) {
+makeplot("plot4", function(d) {
   par(mfrow = c(2, 2))
   plot1()
   plot2()
   plot3()
   plot4()
-# })
+})

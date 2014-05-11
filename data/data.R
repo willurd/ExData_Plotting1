@@ -4,8 +4,8 @@ library(sqldf)
 data.path = "data/household_power_consumption.txt"
 
 # Test variables.
-size <- 504
-bg = "transparent"
+# size <- 504
+# bg = "transparent"
 
 # Actual variables.
 size <- 480
